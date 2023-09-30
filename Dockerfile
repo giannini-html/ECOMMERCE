@@ -6,7 +6,7 @@ COPY . /project
 
 WORKDIR /project
 
-RUN mvn clean package
+RUN mvn clean install -DskipTests
 
 FROM adoptopenjdk/openjdk11:jre-11.0.15_10-alpine
 
