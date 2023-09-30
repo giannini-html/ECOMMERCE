@@ -6,3 +6,19 @@ springdoc:
     use-root-path: true
 
 mensagem: "Ola Dev"
+
+spring
+	datasource:
+		url: jdbc:h2:mem:testdb
+		driverClassName: org.h2.Driver
+		username: sa
+		password: 1234
+	jpa:
+		database-platform: org.hibernate.dialect.H2Dialect
+		show-sql: true
+		defer-datasource-initialization: true
+	hibernate
+		ddl-auto: create
+	h2:
+		console:
+			enabled: true
